@@ -1,58 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Crown Revival — Hair & Wellness Studio · Bengaluru</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Revival</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-
-<!-- SERVICES SECTION -->
-<section id="services">
-  <div class="tabs">
-    <button class="tab active" onclick="st('hair',this)">Hair Services</button>
-    <button class="tab" onclick="st('patch',this)">Hair Patch</button>
-    <button class="tab" onclick="st('care',this)">Hand & Foot</button>
-  </div>
-  
-  <!-- Hair Services (WITHOUT Beard Styling & Grooming) -->
-  <div class="spanel active" id="p-hair">
-    <div class="scard"><span class="sico">✂️</span><div class="snm">Haircut (Men)</div></div>
-    <div class="scard"><span class="sico">✂️</span><div class="snm">Haircut (Women)</div></div>
-    <div class="scard"><span class="sico">💧</span><div class="snm">Hair Wash & Blow Dry</div></div>
-    <div class="scard"><span class="sico">🌟</span><div class="snm">Hair Styling (Party / Occasion)</div></div>
-    <div class="scard"><span class="sico">🔧</span><div class="snm">Hair Fixing & Bonding</div></div>
-  </div>
-
-  <!-- Hand & Foot Care (WITHOUT Spa Manicure & Pedicure) -->
-  <div class="spanel" id="p-care">
-    <div class="scard"><span class="sico">💅</span><div class="snm">Manicure</div></div>
-    <div class="scard"><span class="sico">🦶</span><div class="snm">Pedicure</div></div>
-  </div>
-</section>
-
-<!-- GALLERY (WITHOUT Clip-In Hair Extensions items) -->
-<section id="gallery">
-  <div class="gal-grid" id="galGrid">
-    <div class="gal-item feat" data-cat="hair"><span class="gcap">Hair Transformation</span></div>
-    <div class="gal-item" data-cat="patch"><span class="gcap">Hair Patch</span></div>
-    <div class="gal-item tall" data-cat="hair"><span class="gcap">Occasion Styling</span></div>
-    <div class="gal-item feat" data-cat="patch"><span class="gcap">Hair Replacement</span></div>
-  </div>
-</section>
-
-<!-- BOOKING FORM (Removed Beard Styling & Grooming and Spa Manicure & Pedicure) -->
-<section id="booking">
-  <select>
-    <option>Haircut (Men)</option>
-    <option>Haircut (Women)</option>
-    <option>Hair Wash & Blow Dry</option>
-    <option>Hair Styling (Party / Occasion)</option>
-    <option>Hair Fixing & Bonding</option>
-    <option>Manicure</option>
-    <option>Pedicure</option>
-  </select>
-</section>
-
+    <header>
+        <h1>Welcome to Crown Revival</h1>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Hair Services</h2>
+            <ul>
+                <li>Hair Cutting</li>
+                <li>Hair Coloring</li>
+                <li>Styling</li>
+                <!-- Beard Styling & Grooming removed -->
+            </ul>
+            <h2>Hand & Foot Care</h2>
+            <ul>
+                <li>Manicure</li>
+                <li>Pedicure</li>
+                <!-- Spa Manicure & Pedicure removed -->
+            </ul>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <ul>
+                <li><img src="image1.jpg" alt="Image 1"></li>
+                <li><img src="image2.jpg" alt="Image 2"></li>
+                <li><img src="image3.jpg" alt="Image 3"></li>
+                <!-- Clip-In Hair Extensions gallery items removed -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Crown Revival. All rights reserved.</p>
+    </footer>
 </body>
 </html>
