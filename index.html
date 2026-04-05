@@ -1,31 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crown Revival</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Crown Revival — Hair & Wellness Studio · Bengaluru</title>
 </head>
 <body>
-    <h1>Services</h1>
-    <h2>Hair Services</h2>
-    <ul>
-        <li>Haircut</li>
-        <li>Coloring</li>
-        <li>Styling</li>
-        <!-- Removed Beard Styling & Grooming -->
-    </ul>
-    <h2>Hand and Foot Services</h2>
-    <ul>
-        <li>Manicure</li>
-        <li>Pedicure</li>
-        <!-- Removed Spa Manicure & Pedicure -->
-    </ul>
-    <h2>Gallery</h2>
-    <ul>
-        <li>Photo 1</li>
-        <li>Photo 2</li>
-        <li>Photo 3</li>
-        <!-- Removed Clip In extension -->
-    </ul>
+
+<!-- SERVICES SECTION -->
+<section id="services">
+  <div class="tabs">
+    <button class="tab active" onclick="st('hair',this)">Hair Services</button>
+    <button class="tab" onclick="st('patch',this)">Hair Patch</button>
+    <button class="tab" onclick="st('care',this)">Hand & Foot</button>
+  </div>
+  
+  <!-- Hair Services (WITHOUT Beard Styling & Grooming) -->
+  <div class="spanel active" id="p-hair">
+    <div class="scard"><span class="sico">✂️</span><div class="snm">Haircut (Men)</div></div>
+    <div class="scard"><span class="sico">✂️</span><div class="snm">Haircut (Women)</div></div>
+    <div class="scard"><span class="sico">💧</span><div class="snm">Hair Wash & Blow Dry</div></div>
+    <div class="scard"><span class="sico">🌟</span><div class="snm">Hair Styling (Party / Occasion)</div></div>
+    <div class="scard"><span class="sico">🔧</span><div class="snm">Hair Fixing & Bonding</div></div>
+  </div>
+
+  <!-- Hand & Foot Care (WITHOUT Spa Manicure & Pedicure) -->
+  <div class="spanel" id="p-care">
+    <div class="scard"><span class="sico">💅</span><div class="snm">Manicure</div></div>
+    <div class="scard"><span class="sico">🦶</span><div class="snm">Pedicure</div></div>
+  </div>
+</section>
+
+<!-- GALLERY (WITHOUT Clip-In Hair Extensions items) -->
+<section id="gallery">
+  <div class="gal-grid" id="galGrid">
+    <div class="gal-item feat" data-cat="hair"><span class="gcap">Hair Transformation</span></div>
+    <div class="gal-item" data-cat="patch"><span class="gcap">Hair Patch</span></div>
+    <div class="gal-item tall" data-cat="hair"><span class="gcap">Occasion Styling</span></div>
+    <div class="gal-item feat" data-cat="patch"><span class="gcap">Hair Replacement</span></div>
+  </div>
+</section>
+
+<!-- BOOKING FORM (Removed Beard Styling & Grooming and Spa Manicure & Pedicure) -->
+<section id="booking">
+  <select>
+    <option>Haircut (Men)</option>
+    <option>Haircut (Women)</option>
+    <option>Hair Wash & Blow Dry</option>
+    <option>Hair Styling (Party / Occasion)</option>
+    <option>Hair Fixing & Bonding</option>
+    <option>Manicure</option>
+    <option>Pedicure</option>
+  </select>
+</section>
+
 </body>
 </html>
